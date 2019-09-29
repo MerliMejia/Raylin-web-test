@@ -21,7 +21,7 @@
 <body>
 
   <!--MENU-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav id="menu" class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand" href="#">
       <img id="menu-logo" src="assets/img/logo.jpeg" alt="">
     </a>
@@ -46,7 +46,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#">MARKET</a>
         </li>
-        
+
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <a id="menu-login" class="nav-link" href="#">LOG IN</a>
@@ -54,6 +54,56 @@
       </form>
     </div>
   </nav>
+
+  <!--Mobile Menu-->
+  <nav id="mobileMenu" class="navbar navbar-light">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand mx-auto" href="#">
+      <img id="menu-logo" src="assets/img/logo.jpeg" alt="">
+    </a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+      aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active mx-auto">
+          <a class="nav-link text-primary" href="#">ON THE MENU <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item mx-auto">
+          <a class="nav-link" href="#">PRICING</a>
+        </li>
+
+        <li class="nav-item mx-auto">
+          <a class="nav-link" href="#">WINE</a>
+        </li>
+
+        <li class="nav-item mx-auto">
+          <a class="nav-link" href="#">GIFTS</a>
+        </li>
+
+        <li class="nav-item mx-auto">
+          <a class="nav-link" href="#">MARKET</a>
+        </li>
+      </ul>
+      <form id="mobileMenu-form" class="form-inline mx-auto">
+        <a id="menu-login" class="nav-link" href="#">LOG IN</a>
+        <button id="menu-signup" type="button" class="btn">SIGN UP</button>
+      </form>
+      <!-- Links -->
+
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
+
   <!------------------------------------------------------------------------------------------->
 
   <!-- Optional JavaScript -->

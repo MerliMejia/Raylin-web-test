@@ -6,6 +6,7 @@
 }
 
 body{
+    transition: all, 0.2s;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -36,3 +37,26 @@ body{
 #menu-signup:hover{
     background-color: var(--secondaryBtnColorHover);
 }
+
+#mobileMenu{
+    display: none;
+}
+
+#mobileMenu-form{
+    width: fit-content;
+}
+
+@media only screen and (max-width: 767px) {
+    #mobileMenu{
+        display: flex;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #menu-logo{
+        width: 100px;
+    }
+    
+  }
