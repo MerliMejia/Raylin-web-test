@@ -11,11 +11,15 @@ $(window).on("load", (evt)=>{
 
 function setServingMenuActiveItem(index){
     var item = $(servingMenuItems[index]);
+    var item2;
 
-    for(let i = 0; i < 4; i++){
+    index >= 4 ? item2 = $(servingMenuItems[index - 4]): item2 = $(servingMenuItems[index + 4]);
+
+    for(let i = 0; i < 8; i++){
         let item = $(servingMenuItems[i]);
         item.removeClass("servingMenuSelectedItem");
     }
     item.addClass("servingMenuSelectedItem");
+    item2.addClass("servingMenuSelectedItem");
     selectedServingMenuItems = index;
 }

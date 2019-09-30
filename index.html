@@ -13,6 +13,8 @@
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/main.css">
 
   <title>Blue Apron: Fresh Ingredients, Original Recipes, Delivered to You</title>
@@ -129,10 +131,52 @@
             <p class="servingMenu-bigP"><strong>VEGETARIAN</strong></p>
           </li>
           <li class="nav-item servingMenu-item" onclick="setServingMenuActiveItem(3)">
-            <p class="servingMenu-smallP">2 SERVING</p>
+            <p class="servingMenu-smallP">4 SERVING</p>
             <p class="servingMenu-bigP"><strong>SIGNATURE FOR 4</strong></p>
           </li>
         </ul>
+
+        <nav id="mobileServingMenu" class="navbar navbar-light">
+
+          <p class="servingMenu-bigP" data-toggle="collapse" data-target="#navbarSupportedContent2"
+            aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">SERVING MENU
+          </p>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
+            aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><i
+              class="material-icons">
+              keyboard_arrow_down
+            </i></button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active mx-auto servingMenu-item" onclick="setServingMenuActiveItem(4)">
+                <p class="servingMenu-smallP">2 SERVING</p>
+                <p class="servingMenu-bigP"><strong>SIGNATURE</strong></p>
+              </li>
+              <li class="nav-item mx-auto servingMenu-item" onclick="setServingMenuActiveItem(5)">
+                <p class="servingMenu-smallP">2 SERVING</p>
+                <p class="servingMenu-bigP"><strong>Freestyle</strong></p>
+              </li>
+
+              <li class="nav-item mx-auto servingMenu-item" onclick="setServingMenuActiveItem(6)">
+                <p class="servingMenu-smallP">2 SERVING</p>
+                <p class="servingMenu-bigP"><strong>VEGETARIAN</strong></p>
+              </li>
+
+              <li class="nav-item mx-auto servingMenu-item" onclick="setServingMenuActiveItem(7)">
+                <p class="servingMenu-smallP">4 SERVING</p>
+                <p class="servingMenu-bigP"><strong>SIGNATURE FOR 4</strong></p>
+              </li>
+            </ul>
+
+          </div>
+
+        </nav>
+
+        <p id="foodMenuContainer-textUndeMenu">Choose from an ever-changing mix of meat, fish, Beyond Meat®, and
+          vegetarian recipes along with repeating customer favorites.</p>
 
       </div>
     </div>

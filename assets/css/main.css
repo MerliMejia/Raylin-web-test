@@ -11,7 +11,8 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-div, li {
+div,
+li {
   transition: all, 0.2s;
 }
 
@@ -73,7 +74,7 @@ div, li {
 
 #foodMenuContainer {
   background-color: var(--bgLightGray);
-  height: 300px;
+  height: fit-content;
   padding: 0;
   width: 100%;
 }
@@ -90,8 +91,8 @@ div, li {
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
 
-  min-height: fit-content;
   border-radius: 100px;
   border-width: 2px;
   border-color: var(--bgNormalGray);
@@ -136,13 +137,13 @@ div, li {
   background-color: var(--mainTextColor);
 }
 
-#servingMenu{
-    margin-top: 40px;
+#servingMenu {
+  margin-top: 40px;
 }
 
-#servingMenu li{
-    cursor: pointer;
-    height: fit-content;
+#servingMenu li {
+  cursor: pointer;
+  height: fit-content;
 }
 
 #servingMenu li:not(:first-child) {
@@ -150,23 +151,52 @@ div, li {
   text-align: center;
 }
 
-.servingMenu-smallP{
-    font-size: 13px;
-    margin-bottom: 0;
-    text-align: center;
-    color: var(--mainTextColor);
+.servingMenu-smallP {
+  font-size: 13px;
+  margin-bottom: 0;
+  text-align: center;
+  color: var(--mainTextColor);
 }
 
-.servingMenu-bigP{
-    font-size: 18px;
-    color: var(--mainTextColor);
-    margin-bottom: 0;
+.servingMenu-bigP {
+  font-size: 18px;
+  color: var(--mainTextColor);
+  margin-bottom: 0;
 }
 
-.servingMenuSelectedItem{
+.servingMenuSelectedItem {
   border-bottom-style: solid;
   border-bottom-width: 3;
   border-bottom-color: var(--mainTextColor);
+}
+
+#foodMenuContainer-textUndeMenu {
+  width: 512px;
+  margin: 32px auto 40px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--grayTextColor);
+}
+
+#mobileServingMenu {
+  display: none;
+  margin-top: 20px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--bgNormalGray);
+}
+
+#mobileServingMenu p{
+  cursor: pointer;
+}
+
+#navbarSupportedContent2 > ul > li:not(:first-child) {
+  margin-top: 15px;
+}
+
+.servingMenu-item{
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
@@ -202,7 +232,14 @@ div, li {
     padding-right: 0;
   }
 
-  #servingMenu li {
+  #servingMenu {
     display: none;
+  }
+
+  #foodMenuContainer-textUndeMenu {
+    width: 95%;
+  }
+  #mobileServingMenu {
+    display: flex;
   }
 }
