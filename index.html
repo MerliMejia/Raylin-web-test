@@ -21,57 +21,56 @@
 <body>
 
   <!--MENU-->
-  <nav id="menu" class="navbar navbar-expand-md navbar-light">
-    <a class="navbar-brand" href="#">
-      <img id="menu-logo" src="assets/img/logo.jpeg" alt="">
-    </a>
+  <div id="menuContainer" class="container-fluid">
+    <nav id="menu" class="navbar navbar-expand-md navbar-light mx-auto">
+      <a class="navbar-brand" href="#">
+        <img id="menu-logo" src="assets/img/logo.svg" alt="">
+      </a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link text-primary" href="#">ON THE MENU <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">PRICING</a>
-        </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-primary" href="#">ON THE MENU <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRICING</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">WINE</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WINE</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">GIFTS</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GIFTS</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">MARKET</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MARKET</a>
+          </li>
 
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <a id="menu-login" class="nav-link" href="#">LOG IN</a>
-        <button id="menu-signup" type="button" class="btn">SIGN UP</button>
-      </form>
-    </div>
-  </nav>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a id="menu-login" class="nav-link" href="#">LOG IN</a>
+          <button id="menu-signup" type="button" class="btn">SIGN UP</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <!----------------------------------------------------------------------------------------------------------------->
 
   <!--Mobile Menu-->
   <nav id="mobileMenu" class="navbar navbar-light">
 
-    <!-- Navbar brand -->
     <a class="navbar-brand mx-auto" href="#">
-      <img id="menu-logo" src="assets/img/logo.jpeg" alt="">
+      <img id="menu-logo" src="assets/img/logo.svg" alt="">
     </a>
 
-    <!-- Collapse button -->
-    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
-      data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-      aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="navbar-toggler-icon"></span></button>
 
-    <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 
-      <!-- Links -->
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active mx-auto">
           <a class="nav-link text-primary" href="#">ON THE MENU <span class="sr-only">(current)</span></a>
@@ -96,18 +95,29 @@
         <a id="menu-login" class="nav-link" href="#">LOG IN</a>
         <button id="menu-signup" type="button" class="btn">SIGN UP</button>
       </form>
-      <!-- Links -->
 
     </div>
-    <!-- Collapsible content -->
 
   </nav>
-  <!--/.Navbar-->
+  <!--------------------------------------------------------------------------------------------->
 
-  <!------------------------------------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------->
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <section id="foodMenuContainer" class="container-fluid d-flex">
+    <div class="row align-self-center">
+      <div class="col">
+        <div id="exploreMenu" class="row">
+          <div class="col-sm-6">
+            EXPLORE
+          </div>
+          <div class="col-sm-6">
+            MENUS
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
