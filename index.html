@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
 
-  <title>Hello, world!</title>
+  <title>Blue Apron: Fresh Ingredients, Original Recipes, Delivered to You</title>
 </head>
 
 <body>
@@ -114,6 +114,26 @@
             MENUS
           </div>
         </div>
+
+        <ul id="servingMenu" class="nav justify-content-center">
+          <li class="nav-item servingMenu-item" onclick="setServingMenuActiveItem(0)">
+            <p class="servingMenu-smallP">2 SERVING</p>
+            <p class="servingMenu-bigP"><strong>SIGNATURE</strong></p>
+          </li>
+          <li class="nav-item servingMenu-item" onclick="setServingMenuActiveItem(1)">
+            <p class="servingMenu-smallP">2 SERVING</p>
+            <p class="servingMenu-bigP"><strong>Freestyle</strong></p>
+          </li>
+          <li class="nav-item servingMenu-item" onclick="setServingMenuActiveItem(2)">
+            <p class="servingMenu-smallP">2 SERVING</p>
+            <p class="servingMenu-bigP"><strong>VEGETARIAN</strong></p>
+          </li>
+          <li class="nav-item servingMenu-item" onclick="setServingMenuActiveItem(3)">
+            <p class="servingMenu-smallP">2 SERVING</p>
+            <p class="servingMenu-bigP"><strong>SIGNATURE FOR 4</strong></p>
+          </li>
+        </ul>
+
       </div>
     </div>
   </section>
@@ -127,6 +147,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

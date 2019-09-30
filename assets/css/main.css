@@ -11,8 +11,8 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-div{
-    transition: all, 0.2s;
+div, li {
+  transition: all, 0.2s;
 }
 
 .text-primary {
@@ -67,20 +67,6 @@ div{
 
 .navbar-toggler {
   border-style: none;
-}
-
-@media only screen and (max-width: 767px) {
-  #mobileMenu {
-    display: flex;
-  }
-
-  #menu {
-    display: none;
-  }
-
-  #menu-logo {
-    width: 100px;
-  }
 }
 
 /***************************************************END MENU************************************************/
@@ -150,6 +136,58 @@ div{
   background-color: var(--mainTextColor);
 }
 
+#servingMenu{
+    margin-top: 40px;
+}
+
+#servingMenu li{
+    cursor: pointer;
+    height: fit-content;
+}
+
+#servingMenu li:not(:first-child) {
+  margin-left: 80px;
+  text-align: center;
+}
+
+.servingMenu-smallP{
+    font-size: 13px;
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--mainTextColor);
+}
+
+.servingMenu-bigP{
+    font-size: 18px;
+    color: var(--mainTextColor);
+    margin-bottom: 0;
+}
+
+.servingMenuSelectedItem{
+  border-bottom-style: solid;
+  border-bottom-width: 3;
+  border-bottom-color: var(--mainTextColor);
+}
+
+@media only screen and (max-width: 767px) {
+  #mobileMenu {
+    display: flex;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #menu-logo {
+    width: 100px;
+  }
+
+  #servingMenu li:not(:first-child) {
+    margin-left: 15px;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 575px) {
   #exploreMenu > div:nth-child(1) {
     text-align: center;
@@ -162,5 +200,9 @@ div{
     padding-top: 10px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  #servingMenu li {
+    display: none;
   }
 }
