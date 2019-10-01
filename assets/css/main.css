@@ -1,5 +1,6 @@
 :root {
   --mainTextColor: #0f346c;
+  --mainTextColorHover: #09155a;
   --grayTextColor: rgba(0, 0, 0, 0.5);
   --secondaryBtnColor: #f65f24;
   --secondaryBtnColorHover: rgb(230, 70, 22);
@@ -72,6 +73,7 @@ li {
 
 /***************************************************END MENU************************************************/
 
+/***************************************************SERVING MENU*******************************************/
 #foodMenuContainer {
   background-color: var(--bgLightGray);
   height: fit-content;
@@ -199,6 +201,118 @@ li {
   cursor: pointer;
 }
 
+/***********************************************************************************************************/
+
+/***************************************************DATE HEADER********************************************/
+#dateHeader{
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: var(--bgNormalGray);
+
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--bgNormalGray);
+
+  height: 65px;
+}
+
+#dateHeader-container{
+  height: 100%;
+  max-width: 900px;
+}
+
+#dateHeader-container span{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#dateHeader-container-getCookin{
+  background-color: var(--mainTextColor);
+  color: white;
+  font-size: 13px;
+  border-radius: 50px;
+  padding-left: 18px;
+  padding-right: 18px;
+  height: 45px;
+  font-weight: 600;
+  float: right;
+}
+
+#dateHeader-container-getCookin:hover {
+  background-color: var(--mainTextColorHover);
+}
+
+#dateHeader-container{
+  padding: 0;
+}
+/*************************************************************************************************/
+
+/*************************************************************FOOD ITEMS*********************************/
+
+#foodItems{
+  margin-top: 30px;
+  max-width: 900px;
+  height: fit-content;
+}
+
+#foodItems-sm{
+  display: none;
+}
+
+#foodItems-md img{
+  width: 100%;
+}
+
+#foodItems-sm img{
+  width: 100%;
+}
+
+.foodItems-imgs{
+  border-radius: 2px;
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#foodItems span{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--mainTextColor);
+  width: 100%;
+}
+
+#foodItems p{
+  font-size: 15px;
+  color: var(--grayTextColor);
+  margin-bottom: 15px;
+}
+
+.foodItems-time{
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  font-size: 15px;
+  color: var(--grayTextColor);
+  width: fit-content;
+}
+
+#foodItems-md > .col{
+  height: 290px;
+  cursor: pointer;
+}
+
+#foodItems-sm > .col-sm{
+  height: 290px;
+  cursor: pointer;
+}
+
+.w-100{
+  margin-bottom: 20px;
+}
+
+/*************************************************************************************************/
+
 @media only screen and (max-width: 767px) {
   #mobileMenu {
     display: flex;
@@ -215,6 +329,14 @@ li {
   #servingMenu li:not(:first-child) {
     margin-left: 15px;
     text-align: center;
+  }
+
+  #foodItems-sm{
+    display: flex;
+  }
+
+  #foodItems-md{
+    display: none;
   }
 }
 
@@ -241,5 +363,16 @@ li {
   }
   #mobileServingMenu {
     display: flex;
+  }
+  
+  .foodItems-imgs{
+    height: 180px;
+  }
+
+}
+
+@media only screen and (max-width: 400px){
+  .foodItems-imgs{
+    height: 130px;
   }
 }
