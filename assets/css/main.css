@@ -13,7 +13,8 @@ body {
 }
 
 div,
-li {
+li,
+img {
   transition: all, 0.2s;
 }
 
@@ -189,7 +190,7 @@ li {
   border-bottom-color: var(--bgNormalGray);
 }
 
-#mobileServingMenu p{
+#mobileServingMenu p {
   cursor: pointer;
 }
 
@@ -197,14 +198,14 @@ li {
   margin-top: 15px;
 }
 
-.servingMenu-item{
+.servingMenu-item {
   cursor: pointer;
 }
 
 /***********************************************************************************************************/
 
 /***************************************************DATE HEADER********************************************/
-#dateHeader{
+#dateHeader {
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: var(--bgNormalGray);
@@ -216,17 +217,17 @@ li {
   height: 65px;
 }
 
-#dateHeader-container{
+#dateHeader-container {
   height: 100%;
   max-width: 900px;
 }
 
-#dateHeader-container span{
+#dateHeader-container span {
   font-size: 16px;
   font-weight: bold;
 }
 
-#dateHeader-container-getCookin{
+#dateHeader-container-getCookin {
   background-color: var(--mainTextColor);
   color: white;
   font-size: 13px;
@@ -242,32 +243,40 @@ li {
   background-color: var(--mainTextColorHover);
 }
 
-#dateHeader-container{
+#dateHeader-container {
   padding: 0;
 }
 /*************************************************************************************************/
 
 /*************************************************************FOOD ITEMS*********************************/
 
-#foodItems{
+#foodItems {
   margin-top: 30px;
   max-width: 900px;
   height: fit-content;
 }
 
-#foodItems-sm{
+#foodItems-sm {
   display: none;
 }
 
-#foodItems-md img{
+#foodItems-md img {
   width: 100%;
 }
 
-#foodItems-sm img{
+#foodItems-md img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#foodItems-sm img {
   width: 100%;
 }
 
-.foodItems-imgs{
+#foodItems-sm img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.foodItems-imgs {
   border-radius: 2px;
   width: 100%;
   height: 130px;
@@ -275,20 +284,20 @@ li {
   margin-bottom: 15px;
 }
 
-#foodItems span{
+#foodItems span {
   font-size: 20px;
   font-weight: bold;
   color: var(--mainTextColor);
   width: 100%;
 }
 
-#foodItems p{
+#foodItems p {
   font-size: 15px;
   color: var(--grayTextColor);
   margin-bottom: 15px;
 }
 
-.foodItems-time{
+.foodItems-time {
   position: absolute;
   bottom: 0;
   padding: 0;
@@ -297,18 +306,77 @@ li {
   width: fit-content;
 }
 
-#foodItems-md > .col{
+#foodItems-md > .col {
   height: 290px;
   cursor: pointer;
 }
 
-#foodItems-sm > .col-sm{
+#foodItems-sm > .col-sm {
   height: 290px;
   cursor: pointer;
 }
 
-.w-100{
+.w-100 {
   margin-bottom: 20px;
+}
+
+#foodItems-footer {
+  position: relative;
+  max-width: 900px;
+  height: fit-content;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  border-color: var(--bgNormalGray);
+}
+
+#foodItems-footer div {
+  height: 100%;
+}
+
+#foodItems-footer > div > .col-md-4 {
+  padding: 30px;
+}
+
+.foodItems-footer-line {
+  width: 20px;
+  height: 0px;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+#foodItems-footer h1 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #161616;
+}
+
+#foodItems-footer p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#foodItems-footer-line {
+  background-color: var(--mainTextColor);
+  color: white;
+  font-size: 13px;
+  border-radius: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 45px;
+  font-weight: 600;
+
+  position: absolute;
+  bottom: -22.5px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 /*************************************************************************************************/
@@ -331,12 +399,20 @@ li {
     text-align: center;
   }
 
-  #foodItems-sm{
+  #foodItems-sm {
     display: flex;
   }
 
-  #foodItems-md{
+  #foodItems-md {
     display: none;
+  }
+
+  #foodItems-footer {
+    max-width: 512px;
+  }
+
+  #foodItems-footer > div > .col-md-4 {
+    padding: 20px;
   }
 }
 
@@ -364,15 +440,14 @@ li {
   #mobileServingMenu {
     display: flex;
   }
-  
-  .foodItems-imgs{
+
+  .foodItems-imgs {
     height: 180px;
   }
-
 }
 
-@media only screen and (max-width: 400px){
-  .foodItems-imgs{
+@media only screen and (max-width: 400px) {
+  .foodItems-imgs {
     height: 130px;
   }
 }
