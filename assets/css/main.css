@@ -63,7 +63,7 @@ img {
 }
 
 #mobileMenu-form {
-  width: fit-content;
+  width: 160px;
 }
 #menuContainer {
   border-bottom-style: solid;
@@ -128,8 +128,8 @@ img {
 }
 
 #exploreMenu::after {
-  width: fit-content;
-  height: fit-content;
+  width: 45px;
+  height: 35px;
   content: "OUR";
   position: absolute;
   top: 0;
@@ -374,11 +374,9 @@ img {
   color: white;
   font-size: 13px;
   border-radius: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
   height: 45px;
   font-weight: 600;
-
+  width: 300px;
   position: absolute;
   bottom: -22.5px;
   left: 0;
