@@ -1,3 +1,9 @@
+/*
+@Autor: Merli Mejia - merlimejia2@gmail.com
+*/
+
+/*Variables*/
+
 :root {
   --mainTextColor: #0f346c;
   --mainTextColorHover: #09155a;
@@ -429,15 +435,29 @@ body > footer > div > div > div.col-md-9 {
   padding-left: 0;
 }
 
+#desktopFooter img{
+  width: 125px;
+}
+
 #mobileFooter {
   display: none;
+}
+
+#mobileFooter img{
+  width: 125px;
 }
 
 #smallMobileFooter {
   display: none;
 }
 
+#smallMobileFooter img{
+  width: 125px;
+}
+
 /*************************************************************************************************/
+
+/**********************************************MEDIA QUERIES****************************************/
 
 @media only screen and (max-width: 767px) {
   #mobileMenu {
@@ -536,3 +556,4 @@ body > footer > div > div > div.col-md-9 {
     height: 130px;
   }
 }
+/**************************************************************************************************************/
