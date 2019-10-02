@@ -1,6 +1,7 @@
 :root {
   --mainTextColor: #0f346c;
   --mainTextColorHover: #09155a;
+  --accentTextColor: #a1bce6;
   --grayTextColor: rgba(0, 0, 0, 0.5);
   --secondaryBtnColor: #f65f24;
   --secondaryBtnColorHover: rgb(230, 70, 22);
@@ -381,6 +382,63 @@ img {
 
 /*************************************************************************************************/
 
+/*************************************************FOOTER******************************************/
+
+footer {
+  width: 100%;
+  min-height: 300px;
+  height: fit-content;
+  background-color: var(--mainTextColor);
+  margin-top: 150px;
+}
+
+footer > .container-fluid {
+  max-width: 900px;
+}
+
+footer li,
+ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  margin-top: 20px;
+  padding: 0;
+}
+
+footer a {
+  color: var(--accentTextColor);
+  font-size: 14px;
+}
+
+footer span {
+  color: white;
+  font-size: 14px;
+}
+
+.rigth {
+  text-align: right;
+}
+
+body > footer > div > div > div.col-md-10,
+body > footer > div > div > div.col-md-9 {
+  padding-left: 0;
+}
+
+#mobileFooter {
+  display: none;
+}
+
+#smallMobileFooter {
+  display: none;
+}
+
+/*************************************************************************************************/
+
 @media only screen and (max-width: 767px) {
   #mobileMenu {
     display: flex;
@@ -414,6 +472,14 @@ img {
   #foodItems-footer > div > .col-md-4 {
     padding: 20px;
   }
+
+  #mobileFooter {
+    display: block;
+  }
+
+  #desktopFooter {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -443,6 +509,25 @@ img {
 
   .foodItems-imgs {
     height: 180px;
+  }
+
+  footer a {
+    font-size: 13px;
+  }
+
+  footer span {
+    font-size: 13px;
+  }
+
+}
+
+@media only screen and (max-width: 455px) {
+  #smallMobileFooter {
+    display: block;
+  }
+
+  #mobileFooter {
+    display: none;
   }
 }
 
