@@ -396,6 +396,7 @@ footer {
   height: fit-content;
   background-color: var(--mainTextColor);
   margin-top: 150px;
+  padding-bottom: 20px;
 }
 
 footer > .container-fluid {
@@ -431,11 +432,12 @@ footer span {
 }
 
 body > footer > div > div > div.col-md-10,
-body > footer > div > div > div.col-md-9 {
+body > footer > div > div > div.col-md-9,
+#desktopFooter > div > div.col-9 > div {
   padding-left: 0;
 }
 
-#desktopFooter img{
+#desktopFooter img {
   width: 125px;
 }
 
@@ -443,7 +445,7 @@ body > footer > div > div > div.col-md-9 {
   display: none;
 }
 
-#mobileFooter img{
+#mobileFooter img {
   width: 125px;
 }
 
@@ -451,7 +453,7 @@ body > footer > div > div > div.col-md-9 {
   display: none;
 }
 
-#smallMobileFooter img{
+#smallMobileFooter img {
   width: 125px;
 }
 
@@ -538,7 +540,6 @@ body > footer > div > div > div.col-md-9 {
   footer span {
     font-size: 13px;
   }
-
 }
 
 @media only screen and (max-width: 455px) {
